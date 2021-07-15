@@ -15,10 +15,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-  auto-merge:
+  automerge:
     runs-on: ubuntu-latest
     steps:
-      - name: auto-merge
+      - name: automerge
         uses: "pascalgn/automerge-action@v0.11.0"
         env:
           GITHUB_TOKEN: "${{ secrets.MY_TOKEN }}"
