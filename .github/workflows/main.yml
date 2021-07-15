@@ -19,8 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: automerge
-        uses: "mtanzi/action-automerge@v1"
-        id: automerge
+        uses: "pascalgn/automerge-action@v0.13.1"
         env:
           GITHUB_TOKEN: "${{ secrets.MY_TOKEN }}"
+          MERGE_LABELS: "automerge"
+          MERGE_METHOD: "squash"
           MERGE_COMMIT_MESSAGE: "pull-request-title"
