@@ -24,3 +24,5 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.MY_TOKEN }}"
           MERGE_LABELS: "automerge,!work in progress"
           MERGE_COMMIT_MESSAGE: "pull-request-description"
+          MERGE_REMOVE_LABELS: "automerge"
+          MERGE_METHOD: "squash"
